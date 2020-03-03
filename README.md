@@ -21,6 +21,8 @@ chmod +x killer2
 
 chmod +x cicle_killer 
 
+chmod +x bizarre
+
 5)запустить на выбор
 
 ./killer2
