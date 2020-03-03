@@ -1,4 +1,4 @@
 #!/bin/sh
-temp=$(ps ax | grep "vim" | cut -d ' ' -f1)
+temp=$(ps ax | grep "good@" | cut -d ' ' -f1)
 echo "${temp}"
 kill $temp
