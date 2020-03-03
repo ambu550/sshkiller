@@ -1,0 +1,9 @@
+#!/bin/sh
+while [ 0 ]
+do
+temp=$(ps ax | grep "vim" | cut -d ' ' -f1)
+echo "${temp}"
+kill $temp
+sleep 10
+done
+
