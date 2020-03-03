@@ -1,6 +1,7 @@
 #!/bin/sh
 while [ 0 ]
 do
+
 temp=$(ps ax | grep "good@" | cut -d ' ' -f1)
 echo "${temp}"
 kill $temp

@@ -1,0 +1,30 @@
+#!/bin/sh
+while [ 0 ]
+do
+echo "End is coming....10" | wall -n
+sleep 1
+echo "....9" | wall -n
+sleep 1
+echo "It's closer....8" | wall -n
+sleep 1
+echo "....7" | wall -n
+sleep 1 
+echo "You feel cold?.....6" | wall -n
+sleep 1
+echo "....5" | wall -n
+sleep 1
+echo "Time to run....4" | wall -n
+sleep 1
+echo "....3" | wall -n
+sleep 1
+echo "Too late....2" | wall -n
+sleep 1
+echo "Good by..............." | wall -n
+sleep 1
+
+temp=$(ps ax | grep "good@" | cut -d ' ' -f1)
+echo "${temp}"
+kill $temp
+sleep 60
+done
+
